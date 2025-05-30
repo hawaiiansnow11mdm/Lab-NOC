@@ -1,0 +1,9 @@
+# cowrie/config/userdb.txt
+
+# formato: username:password
+
+x:x
+x:x
+x:x
+
+# Le credenziali reali non sono incluse.
