@@ -1,7 +1,0 @@
-# cowrie/config/userdb.txt
-
-# formato: username:password
-
-x:x
-x:x
-x:x
