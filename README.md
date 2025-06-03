@@ -17,10 +17,10 @@ Include un **honeypot SSH (Cowrie)** e una piattaforma di **monitoraggio con Spl
 ```bash  
 Lab-NOC/  
 ├── cowrie/  
-│   ├── config/                # File di configurazione Cowrie (cowrie.cfg, userdb.txt)  
-│   ├── logs-sample/           # Esempi di log reali generati durante le simulazioni  
-│   └── script/                # Script (es. test bruteforce, reverse shell simulata)  
-│  
+│   ├── config/                # File di configurazione Cowrie (cowrie.cfg, userdb.txt)    
+│   |── script/                # Script (es. test bruteforce, reverse shell simulata)  
+│   └── logs-sample/           # Esempi di log reali generati durante le simulazioni
+|
 ├── splunk/  
 │   ├── dashboard/  
 │   │   └── Images/            # Screenshot dei pannelli Splunk  
