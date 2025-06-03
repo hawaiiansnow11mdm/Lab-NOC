@@ -1,0 +1,20 @@
+# Query SPL per Dashboard Cowrie
+
+## 1. Ip registrati  
+
+index="cowrie" sourcetype="cowrie:json" eventid=cowrie.login.failed OR eventid=cowrie.login.success | stats count by src_ip | sort - count  
+
+
+## 2. Login tentati 
+
+index="main" sourcetype="cowrie:json" eventid="cowrie.login.success" OR eventid="cowrie.login.failed" | stats count by src_ip, username, password | sort -count  
+
+
+## 3. Eventi
+
+index="main" sourcetype="cowrie:json" (eventid=cowrie.login.failed OR eventid=cowrie.login.success OR eventid=cowrie.command.input) | timechart span=1d count by eventid
+
+
+## 4. Comandi Digitati
+
+index="cowrie" sourcetype="cowrie:json" eventid=cowrie.command.inpuit | stats count by input | sort - count | head 10
