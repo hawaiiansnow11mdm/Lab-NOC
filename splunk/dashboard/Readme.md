@@ -9,5 +9,5 @@ Sono visibili gli IP sorgente, i tentativi di login (riusciti e falliti) e le cr
 La dashboard registra anche i comandi eseguiti dall’attaccante nella shell finta, come `ls -la`, `rm -rf`, `cat malicious.sh`, `wget` ecc.  
 
 ### Screenshot  
-![Dashboard 1](Lab-Noc/splunk/dashboard/Images/Ip-TentativiLogin.jpg)  
+![Dashboard 1](Lab-Noc / splunk / dashboard / Images / Ip-TentativiLogin.jpg)  
 ![Dashboard 2](Lab-Noc/splunk/dashboard/Images/Log-Comandi.jpg)
